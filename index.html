@@ -451,16 +451,22 @@
             <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
           </div>
           <div class="agreement-wrapper">
-            <input type="checkbox" class="agreement-checkbox visually-hidden" id="user-privacy" name="user-privacy" required value="true" />
-            <label class="modal-agreement" for="user-privacyt">
+            <input
+              type="checkbox"
+              class="agreement-checkbox visually-hidden"
+              id="user-privacy"
+              name="user-privacy"
+              required
+              value="true" />
+            <label class="modal-agreement" for="user-privacy">
               <span class="review-from-custom-checkbox">
                 <svg class="checkbox-wrapper" width="10" height="8">
                   <use href="./images/icons.svg#check"></use>
                 </svg>
               </span>
-              <span>I accept the terms and conditions of the&nbsp;</span>
-              <label >
-              <a href="" class="privacy-policy-link">Privacy Policy</a></label>
+              <span class="agreement-span">I accept the terms and conditions of the&nbsp;</span>
+
+              <a href="" class="privacy-policy-link">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="contact-form-btn">Send</button>
