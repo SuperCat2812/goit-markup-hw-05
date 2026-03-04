@@ -482,10 +482,16 @@ button:focus {
   top: 50%;
   left: 50%;
   width: 408px;
+  min-height: 584px;
   padding: 72px 24px 24px;
   background-color: #fcfcfc;
   border-radius: 4px;
   transform: translate(-50%, -50%);
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn {
@@ -497,12 +503,14 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 1px solid rgb(0, 0, 0, 0.1);
   padding: 0;
   background-color: #e7e9fc;
   cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn > svg {
@@ -522,6 +530,9 @@ button:focus {
 
 .form-group {
   margin-bottom: 8px;
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-label {
@@ -529,7 +540,7 @@ button:focus {
   font-weight: 400;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -544,6 +555,8 @@ button:focus {
   padding-left: 38px;
   width: 100%;
   height: 40px;
+  background-color: transparent;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -552,8 +565,7 @@ button:focus {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); }
 
 .textarea-wrapper {
   margin-bottom: 16px;
@@ -571,6 +583,7 @@ button:focus {
   transition: border-color 250ms linear;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
 }
 
 .modal-textarea,
@@ -638,7 +651,7 @@ button:focus {
 
 .contact-form-btn {
   padding: 16px 32px;
-  min-width: 169px;
+  min-width: 165px;
   height: 56px;
   margin: 0 auto;
   padding: 0;
@@ -662,6 +675,7 @@ button:focus {
 .close-btn:hover,
 .close-btn:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .close-btn:hover > svg,
@@ -731,7 +745,6 @@ button:focus {
 
 .subscribe-btn {
   border-radius: 4px;
-  padding: 8px 24px;
   width: 165px;
   height: 40px;
   display: flex;
@@ -747,4 +760,9 @@ button:focus {
   text-align: center;
   color: #fff;
   border: none;
+  cursor: pointer;
+}
+
+.subscribe-icon {
+  margin-left: 16px;
 }
