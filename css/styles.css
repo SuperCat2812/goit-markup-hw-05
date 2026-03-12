@@ -580,7 +580,6 @@ button:focus {
   resize: none;
   padding: 8px 16px;
   color: rgba(46, 47, 66, 0.4);
-  transition: border-color 250ms linear;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
@@ -649,6 +648,13 @@ button:focus {
   pointer-events: auto;
 }
 
+.privacy-policy-link {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
 .contact-form-btn {
   padding: 16px 32px;
   min-width: 169px;
@@ -676,6 +682,7 @@ button:focus {
   border: none;
 }
 
+
 .close-btn:hover > svg,
 .close-btn:focus > svg {
   fill: #fff;
@@ -691,12 +698,6 @@ button:focus {
   fill: #4d5ae5;
 }
 
-.privacy-policy-link {
-  line-height: 1.33333;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: #4d5ae5;
-}
 
 .contact-form-btn:hover,
 .contact-form-btn:focus {
